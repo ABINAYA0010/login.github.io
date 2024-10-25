@@ -1,0 +1,142 @@
+ @import url('(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap)');
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ff966d, #fa538d, #89379c);
+}
+
+.container {
+    width: 90vw;
+    max-width: 400px;
+    height: 60vh;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-card h3.title {
+    margin: 15px 0;
+}
+
+.text-input {
+    background: #e6e6e6;
+    height: 40px;
+    display: flex;
+    width: 80%;
+    max-width: 300px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 5px 0;
+}
+
+.text-input input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.text-input i {
+    color: #686868;
+}
+
+::placeholder {
+    color: #9a9a9a;
+}
+
+.login-btn {
+    width: 68%;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to right, #ff966d, #fa538d, #89379c);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 12px;
+    color: #180e0e;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+a.forgot {
+    margin-top: 15px;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.create i {
+    color: #180e0e;
+    margin-left: 10px;
+}
+
+#error-message {
+    color: red;
+}
+
+#success-message {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .container {
+        width: 80vw;
+        height: 80vh;
+    }
+    .login-card {
+        padding: 20px;
+    }
+    .text-input {
+        width: 90%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90vw;
+        height: 90vh;
+    }
+    .login-card {
+        padding: 10px;
+    }
+    .text-input {
+        width: 80%;
+        max-width: 200px;
+    }
+}
